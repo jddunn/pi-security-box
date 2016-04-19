@@ -152,7 +152,7 @@ while True:
     if (remoteEmailSwitch == False):
  	  newmails = feedparser.parse("https://" + user + ":" + passwd + "@mail.google.com/gmail/feed/atom").entries
         for i in newmails:		#for loop itterates through newmails feed
-            if str(i.author)=="Johnny Dunn (dunnj368@newschool.edu)": #replace this string with the author and email you are searching for
+            if str(i.author)=="NAME (EMAIL)": #replace this string with the author and email you are searching for
                 if str(i.title)=="PI-Security: ON"
                     sendEmail(summaryAuthor, summaryTitle) #calls sendEmail function and passes author and summary into the message of the email document
                     remoteEmailSwitch = True
@@ -160,7 +160,7 @@ while True:
     if (remoteEmailSwitch == True & firstTimeStartUp == True):
       newmails = feedparser.parse("https://" + user + ":" + passwd + "@mail.google.com/gmail/feed/atom").entries
         for i in newmails:      #for loop itterates through newmails feed
-            if str(i.author)=="Johnny Dunn (dunnj368@newschool.edu)": #replace this string with the author and email you are searching for
+            if str(i.author)=="NAME (EMAIL)": #replace this string with the author and email you are searching for
                 if str(i.title)=="PI-Security: OFF"
                     sendEmail(summaryAuthor, summaryTitle) #calls sendEmail function and passes author and summary into the message of the email document
                     remoteEmailSwitch = False
@@ -169,9 +169,9 @@ while True:
 
  def sendEmail(str1, str2):
 #     # Change to your own account information
-#     to = 'dunnj368@newschool.edu'
-     gmail_user = 'dunnj368@newschool.edu'
-     gmail_password = '@Newpassword9'
+#     to = ''
+     gmail_user = ''
+     gmail_password = ''
      smtpserver = smtplib.SMTP('smtp.gmail.com', 587)
      smtpserver.ehlo()
      smtpserver.starttls()
