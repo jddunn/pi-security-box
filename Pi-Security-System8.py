@@ -1,6 +1,5 @@
-#Raspberry Pi Seucrity System
-#By: Johnny Dunn
-#A program with a visual interface that allows you to set a raspberry pi running as a 
+#PI-SECURITY BOX / Raspberry Pi Seucrity System 
+#A program with a Terminal interface that allows you to set a raspberry pi running as a 
 #standalone security system. When the PIR motion sensor is set off, an alarm can be played,
 #an email will be sent remotely to the user, and photo recordings will be taken using the pi camera. 
 #The user will be able to activate the security system remotely by sending an email to himself. The emailing
