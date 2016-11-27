@@ -1,5 +1,5 @@
 #Raspberry Pi Seucrity System
-#By: Gentry Demchak & Johnny Dunn
+#By: Johnny Dunn
 #A program with a visual interface that allows you to set a raspberry pi running as a 
 #standalone security system. When the PIR motion sensor is set off, an alarm can be played,
 #an email will be sent remotely to the user, and photo recordings will be taken using the pi camera. 
